@@ -5,7 +5,6 @@ const ScreenClose = () => {
   return (
     <div>
       <div className='text-white'>
-        {' '}
         <HoursDate />
       </div>
     </div>
