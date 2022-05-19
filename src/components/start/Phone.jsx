@@ -1,5 +1,5 @@
 import React from 'react';
-import ScreenClose from '../screen/ScreenClose';
+import ScreenClose from '../screen/screenClose/ScreenClose';
 
 const Phone = () => {
   return (
