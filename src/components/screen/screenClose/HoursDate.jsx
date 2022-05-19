@@ -23,7 +23,8 @@ const HoursDate = () => {
 
   return (
     <div>
-      <h1> {`${times.toLocaleDateString('fr-FR', optionsDate)} ${times.toLocaleTimeString('fr-FR', optionsTime)}`} </h1>
+      <div> {`${times.toLocaleDateString('fr-FR', optionsDate)}`} </div>
+      <div>{`${times.toLocaleTimeString('fr-FR', optionsTime)}`}</div>
     </div>
   );
 };
