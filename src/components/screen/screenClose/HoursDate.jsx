@@ -22,9 +22,9 @@ const HoursDate = () => {
   }, []);
 
   return (
-    <div>
+    <div className='flex flex-col items-center '>
+      <div className='text-7xl font-light'>{`${times.toLocaleTimeString('fr-FR', optionsTime)}`}</div>
       <div> {`${times.toLocaleDateString('fr-FR', optionsDate)}`} </div>
-      <div>{`${times.toLocaleTimeString('fr-FR', optionsTime)}`}</div>
     </div>
   );
 };
