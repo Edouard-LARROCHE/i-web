@@ -11,15 +11,8 @@ module.exports = {
       transparent: 'transparent',
       black: '#000',
       white: '#fff',
-      blue: '#1fb6ff',
-      purple: '#7e5bef',
-      pink: '#ff49db',
-      orange: '#ff7849',
-      green: '#13ce66',
-      yellow: '#ffc82c',
-      'gray-dark': '#273444',
-      gray: '#8492a6',
-      'gray-light': '#d3dce6',
+      gray1: 'rgb(17 24 39)',
+      gray2: 'rgb(31 41 55)',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -27,6 +20,7 @@ module.exports = {
     },
     extend: {
       spacing: {
+        ml: '10px',
         128: '32rem',
         144: '36rem',
       },
