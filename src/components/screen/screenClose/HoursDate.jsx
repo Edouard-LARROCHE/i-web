@@ -5,7 +5,7 @@ const HoursDate = () => {
 
   let optionsDate = {
     weekday: 'long',
-    month: 'short',
+    month: 'long',
     day: 'numeric',
   };
 
