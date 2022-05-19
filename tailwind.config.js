@@ -25,10 +25,12 @@ module.exports = {
     },
     extend: {
       spacing: {
+        hs: '90%',
         ml: '10px',
         128: '32rem',
         144: '36rem',
       },
+
       borderRadius: {
         '4xl': '2rem',
       },
