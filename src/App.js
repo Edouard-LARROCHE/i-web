@@ -1,7 +1,10 @@
+import React from 'react';
+import Phone from './components/start/Phone';
+
 function App() {
   return (
     <div className=''>
-      <h1 className='text-2xl underline'>hello</h1>
+      <Phone />
     </div>
   );
 }
