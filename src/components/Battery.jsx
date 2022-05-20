@@ -12,7 +12,7 @@ const Battery = () => {
       interval = setInterval(() => {
         setProgress((prev) => prev - 1);
         setNum((prev) => prev - 1);
-      }, 10000);
+      }, 20000);
     } else {
       clearInterval(interval);
     }
@@ -38,7 +38,11 @@ const Battery = () => {
       <div className='flex fle-col items-center'>
         {`${num}%`}
         <div className='border rounded-full w-9 h-3.5 ml-1 overflow-hidden '>
-          <div className='h-full bg-white' style={{ width: `${progress}%` }} />
+          {progress && num >= 20 ? (
+            <div className='h-full bg-white' style={{ width: `${progress}%` }} />
+          ) : (
+            <div className='h-full bg-red' style={{ width: `${progress}%` }} />
+          )}
         </div>
       </div>
     </div>
