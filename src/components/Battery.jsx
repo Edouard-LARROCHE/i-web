@@ -34,7 +34,7 @@ const Battery = () => {
 
   return (
     <div className='flex justify-between mx-2'>
-      <div className=''>I-web</div>
+      <div>I-web</div>
       <div className='flex fle-col items-center'>
         {`${num}%`}
         <div className='border rounded-full w-9 h-3.5 ml-1 overflow-hidden '>

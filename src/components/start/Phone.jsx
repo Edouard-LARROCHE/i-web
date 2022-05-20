@@ -1,5 +1,6 @@
 import React from 'react';
 import ScreenClose from '../screen/screenClose/Index';
+import TextToOpen from '../screen/screenClose/TextToOpen';
 
 const Phone = () => {
   return (
@@ -13,6 +14,7 @@ const Phone = () => {
             </div>
             <div className='border h-4/5 mx-1 bg-black '>
               <ScreenClose />
+              <TextToOpen />
             </div>
             <div className='h-24 bg-black2 flex justify-center items-center '>
               <div className='border rounded-full w-14 h-14 bg-gray2' />
