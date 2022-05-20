@@ -38,7 +38,7 @@ const Phone = () => {
             )}
 
             <div className='h-24 bg-black2 flex justify-center items-center  '>
-              <div className='border rounded-full w-14 h-14 bg-gray2 cursor-grab' onClick={clickToDisplayScreen} />
+              <div className='border rounded-full w-14 h-14 bg-gray2 cursor-pointer' onClick={clickToDisplayScreen} />
             </div>
           </div>
         </div>
