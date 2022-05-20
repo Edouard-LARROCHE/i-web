@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ScreenClose from '../screen/screenClose/Index';
+import Notification from '../screen/screenClose/Notification';
 import TextToOpen from '../screen/screenClose/TextToOpen';
 
 const Phone = () => {
@@ -34,6 +35,7 @@ const Phone = () => {
               <div className='border h-4/5 mx-1 bg-black cursor-grab' id='mouse-over'>
                 <ScreenClose />
                 <TextToOpen />
+                <Notification />
               </div>
             )}
 
