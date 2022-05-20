@@ -16,8 +16,8 @@ const Phone = () => {
               <ScreenClose />
               <TextToOpen />
             </div>
-            <div className='h-24 bg-black2 flex justify-center items-center '>
-              <div className='border rounded-full w-14 h-14 bg-gray2' />
+            <div className='h-24 bg-black2 flex justify-center items-center  '>
+              <div className='border rounded-full w-14 h-14 bg-gray2 cursor-grab' />
             </div>
           </div>
         </div>
