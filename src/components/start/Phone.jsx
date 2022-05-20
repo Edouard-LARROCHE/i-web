@@ -23,9 +23,9 @@ const Phone = () => {
               <div className='border w-16 h-2 rounded-lg bg-gray2 ml-ml' />
             </div>
             {!openScreen ? (
-              <div className='border h-4/5 mx-1 bg-black ' />
+              <div className='border h-4/5 mx-1 bg-black cursor-grab' />
             ) : (
-              <div className='border h-4/5 mx-1 bg-black '>
+              <div className='border h-4/5 mx-1 bg-black cursor-grab'>
                 <ScreenClose />
                 <TextToOpen />
               </div>
