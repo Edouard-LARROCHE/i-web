@@ -9,6 +9,10 @@ const Phone = () => {
     setOpenScreen(true);
   };
 
+  setTimeout(() => {
+    if (openScreen) setOpenScreen(false);
+  }, 10000);
+
   return (
     <div>
       <div className='h-screen flex justify-center items-center '>
