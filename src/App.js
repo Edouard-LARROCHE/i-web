@@ -3,7 +3,7 @@ import Phone from './components/start/Phone';
 
 function App() {
   return (
-    <div className=''>
+    <div className='bg-gray2'>
       <Phone />
     </div>
   );
