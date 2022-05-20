@@ -7,11 +7,17 @@ const Phone = () => {
 
   const clickToDisplayScreen = () => {
     setOpenScreen(true);
-  };
 
-  setTimeout(() => {
-    if (openScreen) setOpenScreen(false);
-  }, 10000);
+    // if (!openScreen) {
+    //   let mouseOver = document.getElementById('mouse-over');
+    //   mouseOver.addEventListener('mouseleave', () => {
+    //     console.log('leave');
+    //     setTimeout(() => {
+    //       setOpenScreen(false);
+    //     }, 3000);
+    //   });
+    // }
+  };
 
   return (
     <div>
@@ -23,9 +29,9 @@ const Phone = () => {
               <div className='border w-16 h-2 rounded-lg bg-gray2 ml-ml' />
             </div>
             {!openScreen ? (
-              <div className='border h-4/5 mx-1 bg-black cursor-grab' />
+              <div className='border h-4/5 mx-1 bg-black cursor-grab' id='mouse-over' />
             ) : (
-              <div className='border h-4/5 mx-1 bg-black cursor-grab'>
+              <div className='border h-4/5 mx-1 bg-black cursor-grab' id='mouse-over'>
                 <ScreenClose />
                 <TextToOpen />
               </div>
