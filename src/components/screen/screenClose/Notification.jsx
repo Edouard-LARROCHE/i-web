@@ -1,8 +1,15 @@
 import React from 'react';
 
 const Notification = ({ remove, switchItems }) => {
+  const test = document.getElementById('notif');
+  console.log(test);
+
+  const displayNone = () => {
+    test.style.display = 'none';
+  };
+
   return (
-    <div className='relative top-16'>
+    <div className='relative top-16' id='notif'>
       <div className='flex justify-between '>
         <div className='text-white text-xl mr-2 relative left-5'>Centre de notifications</div>
         {!remove ? (
@@ -11,7 +18,9 @@ const Notification = ({ remove, switchItems }) => {
           </div>
         ) : (
           <div className=' rounded-full bg-gray2 p-1 w-14 h-6 cursor-pointer relative right-5 ease-in-out duration-200'>
-            <div className='text-white text-xs font-thin  flex justify-center'>Effacer</div>
+            <div className='text-white text-xs font-thin  flex justify-center' onClick={displayNone}>
+              Effacer
+            </div>
           </div>
         )}
       </div>
