@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Notification = () => {
+  const [remove, setRemove] = useState(false);
+
+  const switchItems = () => {
+    setRemove(true);
+  };
+
   return (
-    <div className=''>
+    <div className='relative top-16'>
       <div className='flex justify-between '>
         <div className='text-white text-xl mr-2 relative left-5'>Centre de notifications</div>
-        <div className=' rounded-full bg-gray2 p-1 w-6 h-6 cursor-pointer relative right-5'>
-          <div className='text-white text-xs font-thin  flex justify-center '>X</div>
-        </div>
+        {!remove ? (
+          <div className=' rounded-full bg-gray2 p-1 w-6 h-6 cursor-pointer relative right-5' onClick={switchItems}>
+            <div className='text-white text-xs font-thin  flex justify-center'>X</div>
+          </div>
+        ) : (
+          <div className=' rounded-full bg-gray2 p-1 w-14 h-6 cursor-pointer relative right-5 ease-in-out duration-200'>
+            <div className='text-white text-xs font-thin  flex justify-center'>Effacer</div>
+          </div>
+        )}
       </div>
       <div className='flex relative left-5 mt-3'>
         <div className='rounded-2xl bg-gray2 w-full h-14 mr-8 cursor-pointer '>
