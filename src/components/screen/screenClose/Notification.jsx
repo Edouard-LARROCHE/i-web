@@ -13,7 +13,7 @@ const Notification = ({ remove, switchItems }) => {
       <div className='flex justify-between '>
         <div className='text-white text-xl mr-2 relative left-5'>Centre de notifications</div>
         {!remove ? (
-          <div className=' rounded-full bg-gray2 p-1 w-6 h-6 cursor-pointer relative right-5' onClick={switchItems}>
+          <div className=' rounded-full bg-gray2 p-1 w-6 h-6 cursor-pointer relative right-5 ease-in-out duration-200' onClick={switchItems}>
             <div className='text-white text-xs font-thin  flex justify-center'>X</div>
           </div>
         ) : (
