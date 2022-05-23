@@ -5,6 +5,17 @@ import TextToOpen from '../screen/screenClose/TextToOpen';
 
 const Phone = () => {
   const [openScreen, setOpenScreen] = useState(false);
+  const [remove, setRemove] = useState(false);
+
+  const switchItems = () => {
+    setRemove(true);
+  };
+
+  const itemsReverse = () => {
+    if (remove) {
+      setRemove(false);
+    }
+  };
 
   const clickToDisplayScreen = () => {
     setOpenScreen(true);
@@ -32,9 +43,9 @@ const Phone = () => {
             {!openScreen ? (
               <div className='border h-4/5 mx-1 bg-black cursor-grab' id='mouse-over' />
             ) : (
-              <div className='border h-4/5 mx-1 bg-black cursor-grab relative' id='mouse-over'>
+              <div className='border h-4/5 mx-1 bg-black cursor-grab relative' id='mouse-over' onClick={itemsReverse}>
                 <ScreenClose />
-                <Notification />
+                <Notification remove={remove} switchItems={switchItems} />
                 <div className='absolute bottom-3 flex justify-center w-full'>
                   <TextToOpen />
                 </div>

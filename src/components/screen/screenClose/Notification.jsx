@@ -1,12 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Notification = () => {
-  const [remove, setRemove] = useState(false);
-
-  const switchItems = () => {
-    setRemove(true);
-  };
-
+const Notification = ({ remove, switchItems }) => {
   return (
     <div className='relative top-16'>
       <div className='flex justify-between '>
