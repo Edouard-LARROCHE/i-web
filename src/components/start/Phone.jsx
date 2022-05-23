@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ScreenClose from '../screen/screenClose/Index';
 import Notification from '../screen/screenClose/Notification';
 import TextToOpen from '../screen/screenClose/TextToOpen';
+import Index from '../screen/screenOpen/Index';
 
 const Phone = () => {
   const [openScreen, setOpenScreen] = useState(false);
@@ -31,10 +32,6 @@ const Phone = () => {
     // }
   };
 
-  const doubleClick = () => {
-    console.log('doucle click');
-  };
-
   return (
     <div>
       <div className='h-screen flex justify-center items-center '>
@@ -57,7 +54,7 @@ const Phone = () => {
             )}
 
             <div className='h-24 bg-black2 flex justify-center items-center  '>
-              <div className='border rounded-full w-14 h-14 bg-gray2 cursor-pointer' onClick={clickToDisplayScreen} onDoubleClick={doubleClick} />
+              <div className='border rounded-full w-14 h-14 bg-gray2 cursor-pointer' onClick={clickToDisplayScreen} />
             </div>
           </div>
         </div>
