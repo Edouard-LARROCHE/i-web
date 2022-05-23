@@ -32,10 +32,12 @@ const Phone = () => {
             {!openScreen ? (
               <div className='border h-4/5 mx-1 bg-black cursor-grab' id='mouse-over' />
             ) : (
-              <div className='border h-4/5 mx-1 bg-black cursor-grab' id='mouse-over'>
+              <div className='border h-4/5 mx-1 bg-black cursor-grab relative' id='mouse-over'>
                 <ScreenClose />
-                <TextToOpen />
                 <Notification />
+                <div className='absolute bottom-3 flex justify-center w-full'>
+                  <TextToOpen />
+                </div>
               </div>
             )}
 

@@ -5,14 +5,14 @@ const TextToOpen = () => {
 
   setTimeout(() => {
     setDelay(true);
-  }, 1500);
+  }, 500);
 
   return (
     <>
       {delay && (
-        <div className='tracking'>
-          <div className='text-white text-sm flex justify-center relative top-96 text-center '>Cliquer deux fois sur le boutton principal</div>
-          <div className='text-white text-sm flex justify-center relative top-96 text-center'>pour ouvrir</div>
+        <div className='tracking flex flex-col items-center '>
+          <div className='text-white text-sm '>Cliquer deux fois sur le boutton principal</div>
+          <div className='text-white text-sm '>pour ouvrir</div>
         </div>
       )}
     </>
