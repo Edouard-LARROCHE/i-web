@@ -35,7 +35,7 @@ const Notification = ({ remove, switchItems }) => {
                 <div className='ml-3 text-white'>I-web</div>
                 <div className='p-2 text-xs font-thin text-white'>À l'instant</div>
               </div>
-              <div className='text-white ml-3'>BIENVENUE</div>
+              <div className='text-white text-xs ml-3'>BIENVENUE</div>
             </div>
           </div>
         </div>
