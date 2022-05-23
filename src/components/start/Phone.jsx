@@ -6,6 +6,7 @@ import Index from '../screen/screenOpen/Index';
 
 const Phone = () => {
   const [openScreen, setOpenScreen] = useState(false);
+  const [openHomeMenu, setOpenHomeMenu] = useState(false);
   const [remove, setRemove] = useState(false);
 
   const switchItems = () => {
@@ -20,6 +21,7 @@ const Phone = () => {
 
   const clickToDisplayScreen = () => {
     setOpenScreen(true);
+    setOpenHomeMenu(false);
 
     // if (!openScreen) {
     //   let mouseOver = document.getElementById('mouse-over');
@@ -43,7 +45,7 @@ const Phone = () => {
             </div>
             {!openScreen ? (
               <div className='border h-4/5 mx-1 bg-black cursor-grab' id='mouse-over' />
-            ) : (
+            ) : !openHomeMenu ? (
               <div className='border h-4/5 mx-1 bg-black cursor-grab relative' id='mouse-over' onClick={itemsReverse}>
                 <ScreenClose />
                 <Notification remove={remove} switchItems={switchItems} />
@@ -51,10 +53,16 @@ const Phone = () => {
                   <TextToOpen />
                 </div>
               </div>
+            ) : (
+              <Index />
             )}
 
             <div className='h-24 bg-black2 flex justify-center items-center  '>
-              <div className='border rounded-full w-14 h-14 bg-gray2 cursor-pointer' onClick={clickToDisplayScreen} />
+              <div
+                className='border rounded-full w-14 h-14 bg-gray2 cursor-pointer'
+                onClick={clickToDisplayScreen}
+                onDoubleClick={() => setOpenHomeMenu(true)}
+              />
             </div>
           </div>
         </div>
