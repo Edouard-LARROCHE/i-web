@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Battery from '../../Battery';
+import HomeMenu from './HomeMenu';
 
 const Index = () => {
   const [times, setTimes] = useState(new Date());
@@ -24,6 +25,7 @@ const Index = () => {
           <div className='text-xm relative top-[-23px]'>{`${times.toLocaleTimeString('fr-FR', optionsTime)}`}</div>
         </div>
       </div>
+      <HomeMenu />
     </div>
   );
 };
