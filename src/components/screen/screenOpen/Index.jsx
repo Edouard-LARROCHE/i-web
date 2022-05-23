@@ -18,7 +18,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className='border h-4/5 mx-1 bg-black cursor-grab'>
+    <div className='border h-4/5 mx-1 bg-black cursor-grab '>
       <div className='text-white '>
         <Battery />
         <div className='flex justify-center relative'>
