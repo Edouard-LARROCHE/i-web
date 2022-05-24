@@ -23,15 +23,14 @@ const Phone = () => {
     setOpenScreen(true);
     setOpenHomeMenu(false);
 
-    // if (!openScreen) {
-    //   let mouseOver = document.getElementById('mouse-over');
-    //   mouseOver.addEventListener('mouseleave', () => {
-    //     console.log('leave');
-    //     setTimeout(() => {
-    //       setOpenScreen(false);
-    //     }, 3000);
-    //   });
-    // }
+    if (!openScreen) {
+      let mouseOver = document.getElementById('mouse-over');
+      mouseOver.addEventListener('mouseleave', () => {
+        setTimeout(() => {
+          setOpenScreen(false);
+        }, 1000);
+      });
+    }
   };
 
   return (
